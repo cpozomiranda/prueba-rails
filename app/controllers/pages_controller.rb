@@ -8,22 +8,12 @@ class PagesController < ApplicationController
   def batman_vs_superman
   end
 
-  def page1
-    render layout: "bootstrap"  	
-  end
 
-  def page2
-  	
-  end
-
-  def page3
-  	
-  end
 
   def voto_batman
   	unless params[:name].blank? or params[:email].blank?
 
-  		User.create(name:params[:name], mail:params[:email])
+  		Voto_batman.create(name:params[:name], mail:params[:email])
   		redirect_to pages_batman_vs_superman_path,
   		notice:"voto registrado correctamente"
   end
@@ -31,7 +21,7 @@ class PagesController < ApplicationController
   def voto_superman
   	unless params[:name].blank? or params[:email].blank?
 
-  		User.create(name:params[:name], mail:params[:email])
+  		Voto_superman.create(name:params[:name], mail:params[:email])
   		redirect_to pages_batman_vs_superman_path,
   		notice:"voto registrado correctamente"
   end
