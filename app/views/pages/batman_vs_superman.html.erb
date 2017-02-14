@@ -1,0 +1,40 @@
+<div class="bat fondo"><h1>"I am Batman"</h1></div>
+<div class="sup fondo"><h1>"I am Superman"</h1></div>
+
+<div class="formu">
+	<form method="POST" action="<%=pages_save_user_path%>" name="myForm">
+		<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+		<div class="form-group">
+	    	<label>Nombre</label>
+	    	<input type="text" class="form-control" name="nombre" placeholder="Ingresa tu nombre">
+	    	<small id="emailHelp" class="form-text text-muted"></small>
+	    <div class="form-group">
+	    	<label>Email</label>
+	    	<input type="text" class="form-control" name="correo" placeholder="Ingresa tu correo">
+	    <small id="emailHelp" class="form-text text-muted"></small>
+	  	</div>
+
+	    <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+</div>
+
+<div class="formu">
+	<form method="POST" action="<%=pages_save_user_path%>" name="myForm">
+		<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+		<div class="form-group">
+	    	<label>Nombre</label>
+	    	<input type="text" class="form-control" name="nombre" placeholder="Ingresa tu nombre">
+	    	<small id="emailHelp" class="form-text text-muted"></small>
+	    <div class="form-group">
+	    	<label>Email</label>
+	    	<input type="text" class="form-control" name="correo" placeholder="Ingresa tu correo">
+	    <small id="emailHelp" class="form-text text-muted"></small>
+	  	</div>
+
+	    <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+</div>
