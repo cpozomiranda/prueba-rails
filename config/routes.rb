@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'pages/batman'
   get 'pages/superman'
   get 'pages/batman-vs-superman', to: "pages#batman_vs_superman"
-  post 'pages/save_user'
+  post 'pages/voto_superman'
+  post 'pages/voto_batman'
 
   root 'pages#batman_vs_superman'
 
